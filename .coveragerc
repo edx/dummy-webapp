@@ -1,0 +1,12 @@
+[run]
+branch = True
+data_file = .coverage
+source=dummy-webapp
+omit =
+    dummy-webapp/settings*
+    dummy-webapp/conf*
+    *wsgi.py
+    *migrations*
+    *admin.py
+    *static*
+    *templates*
