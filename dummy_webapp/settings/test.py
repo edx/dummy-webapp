@@ -1,6 +1,6 @@
 import os
 
-from dummy-webapp.settings.base import *
+from dummy_webapp.settings.base import *
 
 
 # TEST SETTINGS

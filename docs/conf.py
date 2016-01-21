@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# dummy-webapp documentation build configuration file, created by
+# dummy_webapp documentation build configuration file, created by
 # sphinx-quickstart on Sun Feb 17 11:46:20 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'dummy-webapp'
+project = u'dummy_webapp'
 copyright = u'2015, edX'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -172,7 +172,7 @@ html_static_path = ['_static']
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'dummy-webappdoc'
+htmlhelp_basename = 'dummy_webappdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -191,7 +191,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ('index', 'dummy-webapp.tex', u'dummy-webapp Documentation',
+    ('index', 'dummy_webapp.tex', u'dummy_webapp Documentation',
      u'edX', 'manual'),
 ]
 
@@ -221,7 +221,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'dummy-webapp', u'dummy-webapp Documentation',
+    ('index', 'dummy_webapp', u'dummy_webapp Documentation',
      [u'edX'], 1)
 ]
 
@@ -235,8 +235,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    ('index', 'dummy-webapp', u'dummy-webapp Documentation',
-     u'edX', 'dummy-webapp', 'dummy-webapp',
+    ('index', 'dummy_webapp', u'dummy_webapp Documentation',
+     u'edX', 'dummy_webapp', 'dummy_webapp',
      'Miscellaneous'
      ),
 ]

@@ -2,7 +2,7 @@
 
 from django.test import TestCase, override_settings, RequestFactory
 
-from dummy-webapp.apps.core.context_processors import core
+from dummy_webapp.apps.core.context_processors import core
 
 PLATFORM_NAME = 'Test Platform'
 

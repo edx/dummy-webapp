@@ -1,4 +1,4 @@
-from dummy-webapp.settings.base import *
+from dummy_webapp.settings.base import *
 
 DEBUG = True
 

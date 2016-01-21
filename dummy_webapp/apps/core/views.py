@@ -10,7 +10,7 @@ from django.http import Http404
 from django.shortcuts import redirect
 from django.views.generic import View
 
-from dummy-webapp.apps.core.constants import Status
+from dummy_webapp.apps.core.constants import Status
 
 logger = logging.getLogger(__name__)
 User = get_user_model()
@@ -27,7 +27,7 @@ def health(_):
         HttpResponse: 503 if the service is unavailable, with JSON data indicating the health of each required service
 
     Example:
-        >>> response = requests.get('https://dummy-webapp.edx.org/health')
+        >>> response = requests.get('https://dummy_webapp.edx.org/health')
         >>> response.status_code
         200
         >>> response.content

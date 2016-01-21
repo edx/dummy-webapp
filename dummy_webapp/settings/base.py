@@ -8,7 +8,7 @@ root = lambda *x: join(abspath(PROJECT_ROOT), *x)
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DUMMY-WEBAPP_SECRET_KEY', 'insecure-secret-key')
+SECRET_KEY = os.environ.get('DUMMY_WEBAPP_SECRET_KEY', 'insecure-secret-key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -33,8 +33,8 @@ THIRD_PARTY_APPS = (
 )
 
 PROJECT_APPS = (
-    'dummy-webapp.apps.core',
-    'dummy-webapp.apps.api',
+    'dummy_webapp.apps.core',
+    'dummy_webapp.apps.api',
 )
 
 INSTALLED_APPS += THIRD_PARTY_APPS
@@ -53,10 +53,10 @@ MIDDLEWARE_CLASSES = (
     'waffle.middleware.WaffleMiddleware',
 )
 
-ROOT_URLCONF = 'dummy-webapp.urls'
+ROOT_URLCONF = 'dummy_webapp.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'dummy-webapp.wsgi.application'
+WSGI_APPLICATION = 'dummy_webapp.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
@@ -129,7 +129,7 @@ TEMPLATES = [
                 'django.template.context_processors.static',
                 'django.template.context_processors.tz',
                 'django.contrib.messages.context_processors.messages',
-                'dummy-webapp.apps.core.context_processors.core',
+                'dummy_webapp.apps.core.context_processors.core',
             ),
             'debug': True,  # Django will only display debug pages if the global DEBUG setting is set to True.
         }
@@ -142,9 +142,9 @@ TEMPLATES = [
 # The purpose of customizing the cookie names is to avoid conflicts when
 # multiple Django services are running behind the same hostname.
 # Detailed information at: https://docs.djangoproject.com/en/dev/ref/settings/
-SESSION_COOKIE_NAME = 'dummy-webapp_sessionid'
-CSRF_COOKIE_NAME = 'dummy-webapp_csrftoken'
-LANGUAGE_COOKIE_NAME = 'dummy-webapp_language'
+SESSION_COOKIE_NAME = 'dummy_webapp_sessionid'
+CSRF_COOKIE_NAME = 'dummy_webapp_csrftoken'
+LANGUAGE_COOKIE_NAME = 'dummy_webapp_language'
 # END COOKIE CONFIGURATION
 
 # AUTHENTICATION CONFIGURATION

@@ -1,5 +1,5 @@
 """
-WSGI config for dummy-webapp.
+WSGI config for dummy_webapp.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -13,7 +13,7 @@ from sys import path
 SITE_ROOT = dirname(dirname(abspath(__file__)))
 path.append(SITE_ROOT)
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dummy-webapp.settings.local")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "dummy_webapp.settings.local")
 
 from django.core.wsgi import get_wsgi_application
 

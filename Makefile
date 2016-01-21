@@ -21,7 +21,7 @@ help:
 	@echo "  validate                   run tests and quality checks"
 	@echo "  start-devstack             run a local development copy of the server"
 	@echo "  open-devstack              open a shell on the server started by start-devstack"
-	@echo "  pkg-devstack               build the dummy-webapp image from the latest configuration and code"
+	@echo "  pkg-devstack               build the dummy_webapp image from the latest configuration and code"
 	@echo ""
 
 clean:
@@ -36,12 +36,12 @@ requirements:
 	pip install -qr requirements.txt --exists-action w
 
 test: clean
-	coverage run ./manage.py test dummy-webapp --settings=dummy-webapp.settings.test
+	coverage run ./manage.py test dummy_webapp --settings=dummy_webapp.settings.test
 	coverage report
 
 quality:
-	pep8 --config=.pep8 dummy-webapp *.py
-	pylint --rcfile=pylintrc dummy-webapp *.py
+	pep8 --config=.pep8 dummy_webapp *.py
+	pylint --rcfile=pylintrc dummy_webapp *.py
 
 validate: test quality
 
@@ -56,7 +56,7 @@ extract_translations:
 	python manage.py makemessages -l en -v1 -d djangojs
 
 dummy_translations:
-	cd dummy-webapp && i18n_tool dummy
+	cd dummy_webapp && i18n_tool dummy
 
 compile_translations:
 	python manage.py compilemessages
@@ -73,7 +73,7 @@ start-devstack:
 	docker-compose --x-networking up
 
 open-devstack:
-	docker exec -it dummy-webapp /edx/app/dummy-webapp/devstack.sh open
+	docker exec -it dummy_webapp /edx/app/dummy_webapp/devstack.sh open
 
 pkg-devstack:
-	docker build -t dummy-webapp:latest -f docker/build/dummy-webapp/Dockerfile git://github.com/edx/configuration
+	docker build -t dummy_webapp:latest -f docker/build/dummy_webapp/Dockerfile git://github.com/edx/configuration

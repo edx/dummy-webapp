@@ -1,11 +1,11 @@
-.. dummy-webapp documentation master file, created by
+.. dummy_webapp documentation master file, created by
    sphinx-quickstart on Sun Feb 17 11:46:20 2013.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-dummy-webapp
+dummy_webapp
 ===============================
-A dummy app created for testing the deploy pipeline tools.
+A dummy web app for testing the deployment pipeline.
 
 .. toctree::
    :maxdepth: 2

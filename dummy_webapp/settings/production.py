@@ -4,8 +4,8 @@ import sys
 import yaml
 from logging.handlers import SysLogHandler
 
-from dummy-webapp.settings.base import *
-from dummy-webapp.settings.utils import get_env_setting
+from dummy_webapp.settings.base import *
+from dummy_webapp.settings.utils import get_env_setting
 
 
 DEBUG = False
@@ -24,7 +24,7 @@ LOGGING['handlers']['local'] = {
 
 LOGGING['formatters']['syslog_format'] = {
     format: (
-        "[service_variant=dummy-webapp]"
+        "[service_variant=dummy_webapp]"
         "[%(name)s][env:no_env] %(levelname)s "
         "[{hostname}  %(process)d] [%(filename)s:%(lineno)d] "
         "- %(message)s"
@@ -33,7 +33,7 @@ LOGGING['formatters']['syslog_format'] = {
     )
 }
 
-CONFIG_FILE = get_env_setting('DUMMY-WEBAPP_CFG')
+CONFIG_FILE = get_env_setting('DUMMY_WEBAPP_CFG')
 with open(CONFIG_FILE) as f:
     config_from_yaml = yaml.load(f)
     vars().update(config_from_yaml)

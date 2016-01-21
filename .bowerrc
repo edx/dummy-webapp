@@ -1,4 +1,4 @@
 {
-  "directory": "dummy-webapp/static/bower_components",
+  "directory": "dummy_webapp/static/bower_components",
   "interactive": false
 }

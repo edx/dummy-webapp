@@ -9,17 +9,17 @@ memcache:
   image: memcached:1.4.24
   container_name: memcache
 
-dummy-webapp:
-  # Uncomment this line to use the official dummy-webapp base image
-  image: dummy-webapp:v1
+dummy_webapp:
+  # Uncomment this line to use the official dummy_webapp base image
+  image: dummy_webapp:v1
 
   # Uncomment the next two lines to build from a local configuration repo
   #build: ../configuration
-  #dockerfile: docker/build/dummy-webapp/Dockerfile
+  #dockerfile: docker/build/dummy_webapp/Dockerfile
 
-  container_name: dummy-webapp
+  container_name: dummy_webapp
   volumes:
-    - .:/edx/app/dummy-webapp/dummy-webapp
-  command: /edx/app/dummy-webapp/devstack.sh start
+    - .:/edx/app/dummy_webapp/dummy_webapp
+  command: /edx/app/dummy_webapp/devstack.sh start
   ports:
     - "8000:8000" # TODO: change this to your port

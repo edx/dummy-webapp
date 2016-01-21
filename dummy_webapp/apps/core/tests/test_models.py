@@ -4,7 +4,7 @@ from django.test import TestCase
 from django_dynamic_fixture import G
 from social.apps.django_app.default.models import UserSocialAuth
 
-from dummy-webapp.apps.core.models import User
+from dummy_webapp.apps.core.models import User
 
 
 # pylint: disable=no-member

@@ -2,13 +2,13 @@ Part of `edX code`__.
 
 __ http://code.edx.org/
 
-dummy-webapp  |Travis|_ |Codecov|_
+dummy_webapp  |Travis|_ |Codecov|_
 ===================================================
-.. |Travis| image:: https://travis-ci.org/edx/dummy-webapp.svg?branch=master
-.. _Travis: https://travis-ci.org/edx/dummy-webapp
+.. |Travis| image:: https://travis-ci.org/edx/dummy_webapp.svg?branch=master
+.. _Travis: https://travis-ci.org/edx/dummy_webapp
 
-.. |Codecov| image:: http://codecov.io/github/edx/dummy-webapp/coverage.svg?branch=master
-.. Codecov: http://codecov.io/github/edx/dummy-webapp?branch=master
+.. |Codecov| image:: http://codecov.io/github/edx/dummy_webapp/coverage.svg?branch=master
+.. Codecov: http://codecov.io/github/edx/dummy_webapp?branch=master
 
 The ``README.rst`` file should start with a brief description of the repository,
 which sets it in the context of other repositories under the ``edx``
@@ -29,7 +29,7 @@ Documentation (please modify)
 The ``README.rst`` should include a link to the developer documentation. This documentation should be hosted on
 Read the Docs. An example statement and link are below.
 
-The docs for dummy-webapp are on Read the Docs:  https://dummy-webapp.readthedocs.org.
+The docs for dummy_webapp are on Read the Docs:  https://dummy_webapp.readthedocs.org.
 
 License
 -------
