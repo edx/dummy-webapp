@@ -1,4 +1,4 @@
-Part of `edX code`__.
+Not Part of `edX code`__.
 
 __ http://code.edx.org/
 
